@@ -1,22 +1,35 @@
+class Donut {
+    var isDonut: Boolean
+    var paidDuration: String
+    val placeholder: Object
+    var canPublishFreeCopy: Boolean
+    var editMode: String
 
-
-class Donut(
-    var isDonut: Boolean = isDonut(),
-    var paidDuration: PaidDuration = PaidDuration ("Нет подписки"),
-    var canPublishFreeCopy: Boolean =canPublishFreeCopy (),
-    var editMode: String = editMode(),
-        )
-
-    fun isDonut(): Boolean {
-        TODO()
+    constructor(
+        isDonut: Boolean = isDonut(),
+        paidDuration: String = ("Нет подписки"),
+        canPublishFreeCopy: Boolean = canPublishFreeCopy(),
+        editMode: String = editMode(),
+        placeholder: Object?,
+    ) {
+        this.isDonut = isDonut
+        this.paidDuration = paidDuration
+        this.canPublishFreeCopy = canPublishFreeCopy
+        this.editMode = editMode
+        this.placeholder = placeholder!!
     }
+}
 
-    fun canPublishFreeCopy(): Boolean {
-        TODO()
-    }
+fun isDonut(): Boolean {
+    TODO()
+}
 
-    fun editMode() = when ("all") {
-        "all" -> TODO()
-        "duration" -> TODO()
-        else -> "Неизвестное значение"
-    }
+fun canPublishFreeCopy(): Boolean {
+    TODO()
+}
+
+fun editMode() = when ("all") {
+    "all" -> TODO()
+    "duration" -> TODO()
+    else -> "Неизвестное значение"
+}

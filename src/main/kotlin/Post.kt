@@ -1,60 +1,56 @@
-import java.util.*
-
 data class Post(
-    val id: Long = 1,
+    val id: Int = 0,
     val fromId: Long = 12,
-    var ownerId: Long = 13,
-    var createdBy: Long = 33,
-    var date: Int = 2021,
-    var text: String,
-    var replyOwnerId: Int,
-    var replyPostId: Int,
-    var friendsOnly: Boolean = friendsOnly(),
-    var comments: Comments,
-    var copyright: Copyright,
-    var likes: Likes,
-    var reposts: Reposts,
-    var views: Views,
-    var postType: String = postType(),
-    var signerId: Long=11,
-    var canPin: Boolean = canPin(),
-    var canDelete: Boolean =canDelete (),
-    var canEdit: Boolean = canEdit(),
-    var isPinned: Boolean = isPinned (),
-    var markedAsAds: Boolean = markedAsAds(),
-    var isFavorite: Boolean = isFavorite (),
-    var donut: Donut,
-    var postponedId: Long = 2,
+    val ownerId: Long = 13,
+    val createdBy: Long = 33,
+    val date: Int = 2021,
+    val text: String,
+    val replyOwnerId: Int,
+    val replyPostId: Int,
+    val friendsOnly: Boolean,
+    val comments: Comments,
+    val copyright: Copyright,
+    val likes: Likes,
+    val reposts: Reposts,
+    val views: Views,
+    val postType: String = postType(),
+    val signerId: Long = 11,
+    val canPin: Boolean,
+    val canDelete: Boolean,
+    val canEdit: Boolean,
+    val isPinned: Boolean,
+    val markedAsAds: Boolean,
+    val isFavorite: Boolean,
+    val donut: Donut,
+    val postponedId: Long = 2,
+) {
 
-    )
-fun friendsOnly (): Boolean {
-        TODO()
+
 }
 
-fun postType ( ) = when ("post") {
+fun postType() = when ("post") {
     "post" -> TODO()
     "copy" -> TODO()
     "reply" -> TODO()
     "postpone" -> TODO()
     "suggest" -> TODO()
-    else ->  "Неверная команда!"
+    else -> "Неверная команда!"
 }
 
-fun canPin (): Boolean {
-    TODO()
+class Views(
+    views: Long = 0,
+) {
+    var views = views
+        set(value) {
+            if (value < 0) {
+                return
+            }
+            field = value
+        }
 }
-fun canDelete ():Boolean{
-    TODO()
-}
-fun canEdit () :Boolean{
-    TODO()
-}
-fun isPinned (): Boolean {
-    TODO()
-}
-fun markedAsAds (): Boolean {
-    TODO()
-}
-fun isFavorite (): Boolean {
-    TODO()
-}
+
+
+
+
+
+
