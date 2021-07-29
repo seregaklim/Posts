@@ -1,6 +1,7 @@
 fun main() {
 
-    var original = Post(
+    var original =
+        Post(
         id = 0,
         fromId = 12,
         ownerId = 13,
@@ -25,10 +26,13 @@ fun main() {
         isFavorite = true,
         donut = Donut(false, "Нет подписки", false, "all", null),
         postponedId = 4234,
-    )
+            )
     WallService.add(original)
-    println(original)
-
+    WallService.update(original)
 }
+
+
+
+
 
 

@@ -23,10 +23,8 @@ data class Post(
     val isFavorite: Boolean,
     val donut: Donut,
     val postponedId: Long = 2,
-) {
 
-
-}
+)
 
 fun postType() = when ("post") {
     "post" -> TODO()
