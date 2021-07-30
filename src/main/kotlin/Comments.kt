@@ -28,17 +28,17 @@ class Comments {
 }
 
 fun canPost(): Boolean {
-    TODO()
+return true
 }
 
 fun groupsCanPost(): Boolean {
-    TODO()
+    return true
 }
 
 fun canClose(): Boolean {
-    TODO()
+    return true
 }
 
 fun canOpen(): Boolean {
-    TODO()
+    return true
 }

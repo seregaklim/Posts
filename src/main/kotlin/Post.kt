@@ -1,5 +1,5 @@
 data class Post(
-    val id: Int = 0,
+    val id: Int = 1,
     val fromId: Long = 12,
     val ownerId: Long = 13,
     val createdBy: Long = 33,
@@ -24,7 +24,7 @@ data class Post(
     val donut: Donut,
     val postponedId: Long = 2,
 
-)
+    )
 
 fun postType() = when ("post") {
     "post" -> TODO()
@@ -46,6 +46,10 @@ class Views(
             field = value
         }
 }
+
+
+
+
 
 
 

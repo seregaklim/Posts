@@ -11,7 +11,7 @@ fun main() {
         replyOwnerId = 2423421,
         replyPostId = 234234,
         friendsOnly = true,
-        comments = Comments(0),
+       comments = Comments(0),
         copyright = Copyright(1, "", "Frog", ""),
         likes = Likes(0),
         reposts = Reposts(112),
@@ -24,11 +24,11 @@ fun main() {
         isPinned = true,
         markedAsAds = true,
         isFavorite = true,
-        donut = Donut(false, "Нет подписки", false, "all", null),
+        donut = Donut(false, "Нет подписки", false, "all",Placeholder ),
         postponedId = 4234,
             )
-    WallService.add(original)
-    WallService.update(original)
+//    WallService.add(original)
+//    WallService.update(original)
 }
 
 

@@ -1,5 +1,5 @@
 class Copyright(
-    id: Long = 1,
+    id: Long = 0,
     var link: String,
     var name: String = "Frog",
     var type: String,

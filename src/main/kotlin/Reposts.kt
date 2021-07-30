@@ -12,5 +12,5 @@ class Reposts(
 }
 
 fun userReposted(): Boolean {
-    TODO()
+    return true
 }
